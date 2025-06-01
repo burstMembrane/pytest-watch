@@ -1,0 +1,23 @@
+[project]
+name = "pytest-watch"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "colorama>=0.3.3",
+    "docopt>=0.4.0",
+    "pytest>=2.6.4",
+    "watchdog>=0.6.0",
+]
+
+
+[project.scripts]
+pytest-watch = "pytest_watch:main"
+ptw = "pytest_watch:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[dependency-groups]
+dev = ["pytest>=8.3.5"]
