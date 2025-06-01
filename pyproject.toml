@@ -20,4 +20,4 @@ ptw = "pytest_watch:main"
 testpaths = ["tests"]
 
 [dependency-groups]
-dev = ["pytest>=8.3.5"]
+dev = ["pandoc>=2.4", "pytest>=8.3.5"]
